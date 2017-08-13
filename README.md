@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/metaware/flipper.svg?branch=master)](https://travis-ci.org/metaware/flipper)
 [![LICENSE](https://img.shields.io/github/license/metaware/flipper.svg)](https://github.com/metaware/flipper/blob/master/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/metaware/flipper.svg)](https://github.com/metaware/flipper/releases/latest)
 
 > Feature flipping is the act of enabling or disabling features or parts of your application, ideally without re-deploying or changing anything in your code base.
 
