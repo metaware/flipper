@@ -1,6 +1,6 @@
 # flipper
 
-Feature flipping is the act of enabling or disabling features or parts of your application, ideally without re-deploying or changing anything in your code base.
+> Feature flipping is the act of enabling or disabling features or parts of your application, ideally without re-deploying or changing anything in your code base.
 
 ## Installation
 
@@ -30,9 +30,9 @@ TODO: Write usage instructions here
 
 ## Credits
 
-- A huge shoutout to [flipper](https://github.com/jnunemaker/flipper) (Ruby) and [rollout](https://github.com/fetlife/rollout) for inspiration.
+- A huge shoutout to [flipper](https://github.com/jnunemaker/flipper) (Ruby) and [rollout](https://github.com/fetlife/rollout) (Ruby) for inspiration.
 - `flipper` stands on work done by [greyblake](https://github.com/greyblake) on [crystal-kiwi](https://github.com/greyblake/crystal-kiwi)
 
 ## Contributors
 
-- [Jasdeep Singh](https://github.com/jasdeepsingh) Jasdeep Singh - creator, maintainer
+- [Jasdeep Singh](https://github.com/jasdeepsingh) - creator, maintainer
