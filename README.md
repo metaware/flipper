@@ -20,13 +20,9 @@ require "flipper"
 
 TODO: Write usage instructions here
 
-## Development
-
-TODO: Write development instructions here
-
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/flipper/fork )
+1. Fork it ( https://github.com/metaware/flipper/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -34,9 +30,9 @@ TODO: Write development instructions here
 
 ## Credits
 
-- A huge shoutout to <https://github.com/jnunemaker/flipper> and <https://github.com/fetlife/rollout> for inspiration.
-- `flipper` stands on work done by <https://github.com/greyblake> on <https://github.com/greyblake/crystal-kiwi>
+- A huge shoutout to [flipper](https://github.com/jnunemaker/flipper) (Ruby) and [rollout](https://github.com/fetlife/rollout) for inspiration.
+- `flipper` stands on work done by [greyblake](https://github.com/greyblake) on [crystal-kiwi](https://github.com/greyblake/crystal-kiwi)
 
 ## Contributors
 
-- [[jasdeepsingh]](https://github.com/jasdeepsingh) Jasdeep Singh - creator, maintainer
+- [Jasdeep Singh](https://github.com/jasdeepsingh) Jasdeep Singh - creator, maintainer
