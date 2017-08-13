@@ -1,5 +1,7 @@
 # flipper
 
+[![Build Status](https://travis-ci.org/metaware/flipper.svg?branch=master)](https://travis-ci.org/metaware/flipper)
+
 > Feature flipping is the act of enabling or disabling features or parts of your application, ideally without re-deploying or changing anything in your code base.
 
 ## Installation
