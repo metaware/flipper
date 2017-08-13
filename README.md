@@ -25,7 +25,6 @@ require "flipper"
 You are free to use anyone of the supported adapters/stores from [crystal-kiwi](https://github.com/greyblake/crystal-kiwi)
 
 ```crystal
-Flipper.adapter = Kiwi::MemoryStore.new
 Flipper.adapter = Kiwi::RedisStore.new(Redis.new)
 ```
 
@@ -44,6 +43,8 @@ if Flipper.disabled?(:search)
   puts "Search is not available yet!"
 end
 ```
+
+Note: I strongly recommend to not use `Kiwi::MemoryStore` for development or production environments. It's suitable only for your test environments.
 
 ## Roadmap
 
