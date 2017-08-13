@@ -11,49 +11,57 @@ require "kiwi/memcached_store"
 
 macro works_as_expected_with(store)
   adapter = {{store}}
+  Flipper.adapter = adapter
 
   describe Flipper do
-    context "#enable" do
+
+    context ".adapter" do
+
+      it "can be read back" do
+        Flipper.adapter.should_not be_nil
+      end
+
+      it "should be Kiwi::Store" do
+        Flipper.adapter.should be_a(Kiwi::Store)
+      end
+
+    end
+
+    context ".enable" do
       it "should enable a feature" do
-        flipper = Flipper.new(adapter)
-        flipper.enable(:search).should be_true
+        Flipper.enable(:search).should be_true
       end
     end
 
-    context "#disable" do
+    context ".disable" do
       it "should disable a feature" do
-        flipper = Flipper.new(adapter)
-        flipper.disable(:search).should be_true
+        Flipper.disable(:search).should be_true
       end
     end
 
-    context "#enabled?" do
+    context ".enabled?" do
       it "should check if a feature is enabled?" do
-        flipper = Flipper.new(adapter)
-        flipper.enable(:search)
-        flipper.enabled?(:search).should be_true
-        flipper.disabled?(:search).should be_false
+        Flipper.enable(:search)
+        Flipper.enabled?(:search).should be_true
+        Flipper.disabled?(:search).should be_false
       end
 
       it "should return false for a non-existent feature" do
-        flipper = Flipper.new(adapter)
-        flipper.enabled?(:non_existent_feature).should be_false
-        flipper.disabled?(:non_existent_feature).should be_true
+        Flipper.enabled?(:non_existent_feature).should be_false
+        Flipper.disabled?(:non_existent_feature).should be_true
       end
     end
 
-    context "#disabled?" do
+    context ".disabled?" do
       it "should check if a feature is disabled?" do
-        flipper = Flipper.new(adapter)
-        flipper.disable(:search)
-        flipper.enabled?(:search).should be_false
-        flipper.disabled?(:search).should be_true
+        Flipper.disable(:search)
+        Flipper.enabled?(:search).should be_false
+        Flipper.disabled?(:search).should be_true
       end
 
       it "should return true for a non-existent feature" do
-        flipper = Flipper.new(adapter)
-        flipper.enabled?(:non_existent_feature).should be_false
-        flipper.disabled?(:non_existent_feature).should be_true
+        Flipper.enabled?(:non_existent_feature).should be_false
+        Flipper.disabled?(:non_existent_feature).should be_true
       end
     end
   end

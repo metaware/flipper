@@ -1,6 +1,12 @@
 require "./spec_helper"
 
 describe Flipper do
+  it "attempting to use flipper without adapter raise error" do
+    expect_raises(Flipper::AdapterNotSet) do
+      Flipper.enable(:search)
+    end
+  end
+
   it "works as expected with MemoryStore" do
     works_as_expected_with(Kiwi::MemoryStore.new)
   end

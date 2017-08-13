@@ -22,7 +22,35 @@ dependencies:
 require "flipper"
 ```
 
-TODO: Write usage instructions here
+```
+Flipper.adapter = Kiwi::MemoryStore.new
+Flipper.adapter = Kiwi::RedisStore.new(Redis.new)
+```
+
+You are free to use anyone of the supported adapeters/stores from [crystal-kiwi](https://github.com/greyblake/crystal-kiwi)
+
+```crystal
+Flipper.enable(:feature_name)
+
+if Flipper.enabled?(:feature_name)
+  puts "Feature launched, Let's roll!"
+else
+  puts "Feature not released yet."
+end
+
+Flipper.disable(:search)
+
+if Flipper.disabled?(:search)
+  puts "Search is not available yet!"
+end
+```
+
+## Roadmap
+
+- [x] Simple Logic Gate
+- [ ] Groups
+- [ ] Individual Users/Actors
+- [ ] Percentage of Actors
 
 ## Contributing
 
