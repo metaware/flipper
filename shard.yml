@@ -1,0 +1,21 @@
+name: flipper
+version: 0.1.0
+
+authors:
+  - Jasdeep Singh <jasdeep@metawarelabs.com>
+
+crystal: 0.23.1
+
+license: MIT
+
+dependencies:
+  kiwi:
+    github: greyblake/crystal-kiwi
+    version: ~> 0.1.0
+
+development_dependencies:
+  redis:
+    github: stefanwille/crystal-redis
+    version: ~> 1.8.0
+  memcached:
+    github: comandeo/crystal-memcached
