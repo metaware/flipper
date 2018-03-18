@@ -10,7 +10,7 @@ license: MIT
 
 dependencies:
   kiwi:
-    github: greyblake/crystal-kiwi
+    github: crystal-community/kiwi
     version: ~> 0.1.0
 
 development_dependencies:
