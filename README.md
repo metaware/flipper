@@ -22,7 +22,7 @@ dependencies:
 require "flipper"
 ```
 
-You are free to use anyone of the supported adapters/stores from [crystal-kiwi](https://github.com/greyblake/crystal-kiwi)
+You are free to use anyone of the supported adapters/stores from [crystal-kiwi](https://github.com/crystal-community/kiwi)
 
 ```crystal
 Flipper.adapter = Kiwi::RedisStore.new(Redis.new)
